@@ -2,6 +2,10 @@
   margin: 0;
 }
 
+.menuhide,.specsuperman{
+  visibility: hidden;
+}
+
 body{
   margin: 0 auto;
   width: 1520px;
@@ -212,6 +216,11 @@ font{
   background-position-y: 100%;
   background-position-x: 100%;
   background-repeat: no-repeat;
+}
+
+.bigbox{
+  display: flex;
+  width: 100%;
 }
 
 .history{
@@ -537,5 +546,437 @@ ins{
   background-size: 100% 6px;
 }
 
+   
+}
+
+@media(max-width: 768px){
+
+  .menuhide{
+    visibility: visible;
+    width: 42px;
+    height: 4px;
+    background-color: #CF51CE;
+    align-self: center;
+  }
   
+  
+  body{
+  width: 738px;
+  background-image: none;
+  overflow-x: hidden
+}
+
+body::before{
+  content: '';
+}
+
+nav{
+  width: 100%;
+}
+
+.leftNavCont{
+  width: 403px;
+  
+}
+
+.rightNavCont{
+  display: flex;
+  min-width: 301px;
+  justify-content: space-between;
+  align-items:  center;
+}
+
+
+.logotext{
+  font-size: 24.76px;
+  margin: 0 14px;
+}
+
+.logoMinitxt{
+  font-size: 10px;
+  margin: 0 19px;
+  width: 158px;
+  
+}
+
+.learnhref, .tel, details{
+  display: none;
+}
+
+.comein{
+  font-size: 20px;
+  margin-left: 14px; 
+}
+
+.btn{
+  width: 158px;
+  height: 44px;
+  margin-left: 0px; 
+  
+}
+
+
+
+.path{
+  display: flex;
+  width: 154px;
+  margin-top: 55px; 
+  
+}
+  
+
+header{
+  width: 100%;
+  margin-top: 15px;
+  line-height: 65px;
+}
+
+.leftHead{
+  width: px;
+}
+
+.mainTitle{
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 65px;
+  width: 738px
+}
+
+.price{
+  font-size: 18px;
+  margin-top: 18px;
+  
+}
+
+.icontop{
+  margin-right:  25px
+}
+
+.specSize{
+  font-size: 35px;
+  font-weight: 400, Regular;
+}
+
+.minititle{
+  font-size: 20px;
+  margin-top: 15px;
+  line-height: 160%;
+  font-weight: 400;
+  width: 482px;
+}
+
+.history{
+  margin-top: 147px;
+  width: 100%;
+}
+
+  
+  .superman{
+    position: absolute;
+    height: 410px;
+    width: 410px;
+    top: 35%;
+    left: 69%;
+    
+  }
+
+
+.hisTitle{font-weight: 700;
+  font-size: 40px;
+  line-height: 64px;
+  margin-bottom: 91px
+}
+.hisContItems{
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 160%;
+}
+  
+  .hisImg{
+    width: 268px
+  }
+
+.hisMiniTitle{
+  width: 428px;
+
+}
+
+.L{
+  margin-left: 41px; 
+  margin-bottom: 71px;
+}
+
+.R{
+  margin-right: 41px;
+}
+
+.learn{
+  margin-top: 120px;
+  margin-bottom: 85px;
+  width: 100%;
+}
+
+
+.learnTitle{
+  font-size: 40px;
+  width: 626px;
+}
+  
+.learnMinTitle{
+  margin-top: 24px; 
+  margin-bottom: 80px; 
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 160%;
+  width: 683px;
+}
+
+.bottomLearnCont{
+  flex-wrap: wrap;
+}
+
+
+
+.card{
+  width: 255px;
+  margin: 40px
+}
+
+.miniTitleLearn{
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 150%;
+  margin-bottom: 15px;
+}
+/*
+.txtLearn{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%
+}
+ins{
+  background-image: linear-gradient(264deg, rgba(124,78,171,1) 0%, rgba(221,81,212,1) 100%);
+  background-position: 0 100%;
+  background-size: 100% 7px;
+  background-repeat: repeat-x;
+  border-radius: 5px;
+  text-decoration-line: none;
+}
+  
+  */
+  
+}
+
+@media (max-width: 360px){
+  
+body{
+  width: 360px;
+  margin: 0 15px;
+}
+  
+nav{
+  margin-top: 35px; 
+  width: 100%;
+}
+
+.leftNavCont{
+  width: 94px;
+  
+}
+  
+  .logoMinitxt{
+    display: none;
+  }
+
+.rightNavCont{
+  min-width: 150px;
+}
+
+
+.logo{
+  border-right: none;
+}
+  
+
+.logotext{
+  font-size: 18.51px;
+  margin: 0 24px;
+}
+
+.comein{
+  font-size: 14px;
+  color: white;
+  margin-left: 8px; 
+}
+  
+  .comeimg{
+    width: 13px
+  }
+
+.btn{
+  width: 103px;
+  height: 36px;
+  margin-left: 91px; 
+  
+}
+
+
+/*Путь*/
+
+.path{
+  display: flex;
+  width: 164px;
+  justify-content: space-around;
+  margin-top: 40px; 
+  
+}
+
+
+header{
+  width: 100%;
+  margin-top: 44px;
+}
+
+
+.leftHead{
+  width: 330px;
+}
+
+
+.mainTitle{
+  font-size: 26px;
+  width: 210px;
+  font-size: 26px;
+  line-height: 150%;
+}
+
+.price{
+  font-size: 20px;
+  font-weight: 600, Semi Bold;
+  margin-top: 24px;
+  margin-bottom: 16px;
+  display: flex;
+  
+}
+
+.icontop{
+  margin-right:  25px
+}
+
+.specSize{
+  font-size: 35px;
+  font-weight: 400, Regular;
+}
+
+.minititle{
+  width: 330px;
+  font-size: 18px;
+  margin-top: 10px;
+  line-height: 160%;
+  font-weight: 400;
+}
+
+.history{
+  margin-top: 85px;
+}
+
+.superman{
+  position: absolute;
+  width: 287px;
+  height: 287px;
+  top: 20%;
+  left: 50%;
+}
+
+
+
+.hisTitle{
+  font-size: 24px;
+  width: 332px;
+  margin-right: 15px;
+  text-align: center;
+  margin-bottom: 58px
+}
+
+.hisContItems,{
+  width: 330px;
+  font-size: 18px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+}
+
+.leftStory,.rightStory{
+  flex-direction: column;
+}
+
+  .rightStory{
+    flex-direction: column-reverse;
+  }
+
+.hisMiniTitle{
+  width: 330px;
+}
+
+.L{
+  margin-left: 0px; 
+}
+
+.R{
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+.learn{
+  margin-top: 100px;
+  margin-bottom: 69px;
+  width: 100%;
+}
+
+.learnTitle{
+  font-size: 24px;
+  width: 310px;
+  font-weight: 700;
+  line-height: 150%;
+  }
+.learnMinTitle{
+  margin-top: 25px; 
+  margin-bottom: 50px; 
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  width: 330px
+}
+
+.bottomLearnCont{
+}
+
+
+.card{
+  width: 290px;
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 0;
+}
+
+.miniTitleLearn{
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 150%;
+  margin-bottom: 10px;
+}
+
+.txtLearn{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+}
+ins{
+  background-image: linear-gradient(264deg, rgba(124,78,171,1) 0%, rgba(221,81,212,1) 100%);
+  background-position: 0 100%;
+  background-size: 100% 7px;
+  background-repeat: repeat-x;
+  border-radius: 5px;
+  text-decoration-line: none;
+}
 }
