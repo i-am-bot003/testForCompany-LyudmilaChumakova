@@ -1,0 +1,299 @@
+*{
+  margin: 0;
+}
+
+body{
+  margin: 0 auto;
+  width: 1520px;
+  color: #331A2F;
+  font-family: 'Lato', sans-serif;
+}
+
+nav{
+  display: flex;
+  margin-top: 35px; 
+  width: 100%;
+  justify-content: space-between;
+}
+
+.leftNavCont{
+  display: flex;
+  flex-direction: row;
+  width: 654px;
+  
+}
+
+.rightNavCont{
+  display: flex;
+  min-width: 301px;
+  justify-content: space-between;
+  align-items:  center;
+}
+
+.logocont{
+  display: flex;
+}
+
+.logo{
+  display: flex;
+  border-right: 1px solid #331A2F80;
+  align-items: center;
+}
+
+.logotext{
+  font-size: 31.87px;
+  margin: 0 19px;
+}
+
+.logoMinitxt{
+  font-size: 14px;
+  margin: 0 25px;
+  align-self: center;
+  width: 204px;
+  
+}
+
+details{
+  font-size: 14px;
+  margin-right: 50px;
+  align-self: center;
+}
+
+summary{
+  list-style-type: none;
+  cursor: pointer;
+  position: relative;
+  padding-right: 30px; 
+  font-size: 24px;
+}
+
+summary::after{
+  display: block;
+  content: url(../img/row.png);
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%)
+}
+
+.learnhref{
+  font-size: 24px;
+  align-self: center;
+  color: #331A2F
+}
+
+a{
+  text-decoration-line: none;
+}
+
+.tel{
+  font-size: 24px;
+  position: relative;
+  padding-left: 25px;
+}
+
+.tel::before{
+  content: url(../img/tel.png);
+  position: absolute;
+  left: 0;
+  
+  
+}
+
+.comein{
+  font-size: 23px;
+  color: white;
+  margin-left: 14px; 
+}
+
+.btn{
+  width: 169px;
+  height: 45px;
+  background-color: #CF51CE;
+  margin-left: 91px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  
+}
+
+
+/*Путь*/
+
+.path{
+  display: flex;
+  width: 164px;
+  justify-content: space-around;
+  margin-top: 66px; 
+  
+}
+
+.path a{
+  color: #331A2F80;
+}
+
+
+/*Шапка*/
+
+header{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.leftHead{
+  width: 868px;
+}
+
+
+.mainTitle{
+  font-size: 56px;
+}
+
+font{
+  color: #CF51CE;
+}
+
+.price{
+  font-size: 20px;
+  font-weight: 600, Semi Bold;
+  margin-top: 22px;
+  display: flex;
+  
+}
+
+.icontop{
+  margin-right:  25px
+}
+
+.specSize{
+  font-size: 35px;
+  font-weight: 400, Regular;
+}
+
+.minititle{
+  font-size: 25px;
+  margin-top: 15px;
+  line-height: 160%;
+  font-weight: 400;
+}
+
+.history{
+  margin-top: 147px
+}
+
+.superman{
+  padding-bottom: 44px;
+  padding-left:  30px;
+  padding-right: 30px;
+  box-sizing: border-box;
+  background-image: url(../img/bgForSuperman.png);
+  background-size: 100%;
+  background-position-y: 100%;
+  background-position-x: 100%;
+  background-repeat: no-repeat;
+}
+
+.history{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hisTitle{
+  font-size: 48px;
+  width: 844px;
+  text-align: center;
+  margin-bottom: 100px
+}
+
+.hisContItems{
+  font-size: 25px;
+  line-height: 40px;
+  font-weight: 400;
+}
+
+.leftStory{
+  display: flex;
+  margin-bottom: 7px;
+  align-items:  center;
+}
+
+
+.rightStory{
+  display: flex;
+  margin-bottom: 7px;
+  align-items:  center;
+}
+
+.hisMiniTitle{
+  width: 750px;
+}
+
+.L{
+  margin-left: 81px; 
+}
+
+.R{
+  margin-right: 81px;
+  margin-bottom: 15px
+}
+
+.learn{
+  margin-top: 140px;
+  margin-bottom: 131px;
+}
+
+.topLearnCont{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.learnTitle{
+  font-size: 48px;
+  width: 700px;
+  font-weight: 700;
+  line-height: 64px;
+}
+
+.learnMinTitle{
+  margin-top: 30px; 
+  margin-bottom: 85px; 
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 160%;
+}
+
+.bottomLearnCont{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.card{
+  width: 290px;
+}
+
+.miniTitleLearn{
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 150%;
+  margin-bottom: 15px;
+}
+
+.txtLearn{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%
+}
+ins{
+  background-image: linear-gradient(264deg, rgba(124,78,171,1) 0%, rgba(221,81,212,1) 100%);
+  background-position: 0 100%;
+  background-size: 100% 7px;
+  background-repeat: repeat-x;
+  border-radius: 5px;
+  text-decoration-line: none;
+}
