@@ -262,6 +262,7 @@ font{
 .learn{
   margin-top: 140px;
   margin-bottom: 131px;
+  width: 100%;
 }
 
 .topLearnCont{
@@ -333,7 +334,8 @@ ins{
   }
   
   body{
-  margin: 0 auto;
+  background-image: url(../img/elips1.png);
+  margin: 40px;
   width: 1280px;
 }
 
@@ -341,10 +343,7 @@ ins{
 
 
 nav{
-  margin-top: 35px; 
   width: 1200px;
-  margin-left: 40px;
-  margin-right: 40px;
 }
 
 .leftNavCont{
@@ -500,6 +499,7 @@ summary{
 .learn{
   margin-top: 140px;
   margin-bottom: 121px;
+  max-width: 1168px
 }
 
 
