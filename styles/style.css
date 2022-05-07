@@ -772,6 +772,7 @@ ins{
 body{
   width: 360px;
   margin: 0 15px;
+  overflow-x: hidden;
 }
   
 nav{
