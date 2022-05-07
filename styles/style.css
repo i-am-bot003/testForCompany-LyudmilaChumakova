@@ -7,7 +7,18 @@ body{
   width: 1520px;
   color: #331A2F;
   font-family: 'Lato', sans-serif;
+  background-image:  url(../img/elipsright.svg);
+  background-repeat: no-repeat;
 }
+
+body::before{
+  content:  url(../img/elipsleft.svg);
+  z-index: 170;
+  position: absolute;
+  right: 0;
+  top: 35%;
+}
+
 
 nav{
   display: flex;
@@ -136,10 +147,18 @@ a{
 
 /*Шапка*/
 
+
+
+
 header{
+  width: 100%;
   display: flex;
   justify-content: space-between;
   margin-top: 15px;
+}
+
+.dop{
+  
 }
 
 .leftHead{
@@ -296,4 +315,226 @@ ins{
   background-repeat: repeat-x;
   border-radius: 5px;
   text-decoration-line: none;
+}
+
+
+@media(max-width: 1280px){
+  .minititle{
+    width: 711px
+  }
+  
+  .superman{
+    width: 435.35px;
+    height: 435.35px;
+  }
+  
+  body::before{
+    display: none;
+  }
+  
+  body{
+  margin: 0 auto;
+  width: 1280px;
+}
+
+
+
+
+nav{
+  margin-top: 35px; 
+  width: 1200px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.leftNavCont{
+  width: 459px;
+  
+  
+}
+  
+
+.rightNavCont{
+  min-width: 248px;
+}
+.logocont{
+  display: flex;
+}
+
+.logo{
+  display: flex;
+  border-right: 1px solid #331A2F80;
+  align-items: center;
+}
+  
+  .logoimg{
+    width: 47px;
+  }
+
+.logotext{
+  font-size: 24.76px;
+  margin: 0 14px;
+}
+
+.logoMinitxt{
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 14px;
+  width: 158.53px;
+  
+}
+
+details{
+  font-size: 14px;
+  margin-right: 40px;
+}
+
+summary{
+  padding-right: 20px; 
+  font-size: 18px;
+  
+}
+
+
+
+.learnhref{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 35px;
+}
+
+
+.tel{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 35px;
+  padding-left: 24px;
+}
+
+.tel::before{
+  content: url(../img/tel2.png);
+  
+}
+.comein{
+  font-size: 18px;
+  color: white;
+  margin-left: 10px; 
+}
+
+.btn{
+  width: 152px;
+  height: 43px;
+  margin-left: 92px; 
+  
+}
+
+.path{
+  width: 156px;
+  margin-top: 66px;   
+}
+
+
+.leftHead{
+  width: 711px;
+}
+
+
+.mainTitle{
+  font-size: 46px;
+}
+
+.price{
+  font-size: 18px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.specSize{
+  font-size: 35px;
+}
+
+.minititle{
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.history{
+  margin-top: 77px
+}
+
+.superman{
+  padding-bottom: 39px;
+  padding-left:  38px;
+  padding-right: 15px;
+}
+
+.hisTitle{
+  font-size: 40px;
+  width: 652px;
+  margin-bottom: 96px
+}
+
+.hisContItems{
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.leftStory{
+  margin-bottom: 0px;
+}
+
+
+.hisMiniTitle{
+  width: 563px;
+}
+
+
+.L{
+  margin-left: 81px; 
+}
+
+.R{
+  margin-right: 57px;
+}
+
+.learn{
+  margin-top: 140px;
+  margin-bottom: 121px;
+}
+
+
+.learnTitle{
+  font-size: 40px;
+  width: 641px;
+}
+
+.learnMinTitle{
+  margin-top: 30px; 
+  margin-bottom: 96px; 
+  font-size: 20px;
+  line-height: 32px;
+}
+
+
+
+.card{
+  width: 226px;
+}
+
+.miniTitleLearn{
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 9px;
+}
+
+.txtLearn{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25.6px
+}
+ins{
+  background-size: 100% 6px;
+}
+
+  
 }
