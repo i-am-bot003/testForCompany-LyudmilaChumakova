@@ -1,8 +1,10 @@
 *{
   margin: 0;
 }
-
-.menuhide,.specsuperman{
+.menuhide{
+  display: none;
+}
+.specsuperman{
   visibility: hidden;
 }
 
@@ -299,6 +301,9 @@ font{
 .bottomLearnCont{
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%
 }
 
 
@@ -326,6 +331,9 @@ ins{
   border-radius: 5px;
   text-decoration-line: none;
 }
+
+
+
 
 
 @media(max-width: 1280px){
@@ -555,10 +563,7 @@ ins{
 @media(max-width: 768px){
 
   .menuhide{
-    visibility: visible;
-    width: 42px;
-    height: 4px;
-    background-color: #CF51CE;
+    display: block;
     align-self: center;
   }
   
@@ -759,6 +764,101 @@ header{
   line-height: 160%
 }
 
+  
+  
+#menu__toggle {
+  opacity: 0;
+}
+
+.menu__btn {
+  display: flex; 
+  width: 55px;
+  height:25px;  
+  cursor: pointer;
+  z-index: -2;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: relative;
+  width: 30px;
+  height: 2px;
+  background: #CF51CE;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+  width: 20px;
+  left: 30%
+  
+}
+
+.menu__box {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  padding: 30px;
+  left: 0;
+  width: 56%;
+  height: 10%;
+  margin: 0;
+  list-style: none;
+  background-color: white;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+  z-index: 0 ;
+
+}
+
+.menu__item {
+  color: black;
+  display: block;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+}
+  
+  .menu__box a{
+    color: #331A2F;
+  } 
+  
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+  width: 30px;
+  left: 0px
+}
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  left: 0;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  transition-duration: .25s;
+}.menu__box {
+  transition-duration: .25s;
+}.menu__item {
+  transition-duration: .25s;
+}
+  
+  
+  
 }
 
 @media (max-width: 360px){
